@@ -11,8 +11,8 @@ Arduino RFID Interface code
 -	The system will always return 8 x 8 character strings separated by a comma (,) and terminated with a semi-colon (;)
 -	Each block of 8 characters represents the 4 byte unique identifier from the RFID card if present
 -	Other codes sent are;
-	- ffffffff – standard reply, no card present.
-  - 00000000 – failed read or other error. (I’ve never seen it throw this error under test)
-  - conflict – This happens if 2 readers are too close to each other and they both read the same card number at the same time. It can also happen if a card is moved to another reader very quickly. Individual instants of  this error can be ignored.
+- ffffffff – standard reply, no card present.
+- 00000000 – failed read or other error. (I’ve never seen it throw this error under test)
+- conflict – This happens if 2 readers are too close to each other and they both read the same card number at the same time. It can also happen if a card is moved to another reader very quickly. Individual instants of  this error can be ignored.
 -	If messages are returning slowly (less than once a second) it means a reader has failed or is not connected correctly
 
